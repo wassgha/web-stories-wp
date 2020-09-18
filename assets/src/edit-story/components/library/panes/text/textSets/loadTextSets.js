@@ -75,6 +75,7 @@ export default async function loadTextSets() {
     'section_header',
     'editorial',
     'table',
+    'list',
     'quote',
   ];
 
