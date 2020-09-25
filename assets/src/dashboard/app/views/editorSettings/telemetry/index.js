@@ -91,7 +91,7 @@ export default function TelemetrySettings({
             )}
             &nbsp;
             <a
-              href={'https://policies.google.com/privacy'}
+              href={__('https://policies.google.com/privacy', 'web-stories')}
               rel="noreferrer"
               target="_blank"
               aria-label={__(
