@@ -350,7 +350,7 @@ describe('Styling single text field', () => {
 
       await data.fixture.events.keyboard.type('Ab');
       // Ensure the debounced callback has taken effect.
-      await wait(300);
+      await data.fixture.events.sleep(300);
 
       let options = document
         .getElementById('editor-font-picker-list')
@@ -363,9 +363,3 @@ describe('Styling single text field', () => {
     });
   });
 });
-
-function wait(ms) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms);
-  });
-}
