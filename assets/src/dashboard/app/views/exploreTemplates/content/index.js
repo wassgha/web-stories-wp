@@ -79,6 +79,14 @@ function Content({
                       'No more templates',
                       'web-stories'
                     )}
+                    allDataLoadedAriaMessage={__(
+                      'All templates are loaded',
+                      'web-stories'
+                    )}
+                    loadingAriaMessage={__(
+                      'Loading more templates',
+                      'web-stories'
+                    )}
                     onLoadMore={page.requestNextPage}
                   />
                 </>
