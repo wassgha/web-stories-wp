@@ -38,9 +38,9 @@ export default {
     'core-js',
   ],
   testMatch: [
-    '**/__tests__/**/*.[jt]s',
-    '**/test/**/*.[jt]s',
-    '**/?(*.)test.[jt]s',
+    // '**/__tests__/**/*.[jt]s',
+    '**/test/**/colorPreview.[jt]s',
+    // '**/?(*.)test.[jt]s',
   ],
   setupFilesAfterEnv: ['<rootDir>/tests/js/jest.setup'],
   testPathIgnorePatterns: [
@@ -67,5 +67,5 @@ export default {
     '!**/test/**',
     '!**/stories/**',
   ],
-  reporters: [['jest-silent-reporter', { useDots: true, showWarnings: true }]],
+  // reporters: [['jest-silent-reporter', { useDots: true, showWarnings: true }]],
 };
