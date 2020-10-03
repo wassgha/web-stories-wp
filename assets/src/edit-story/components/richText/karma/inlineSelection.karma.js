@@ -97,6 +97,7 @@ describe('CUJ: Creator can Add and Write Text: Select an individual word to edit
       // Set color using hex input
       await data.fixture.events.click(fontColor.hex, { clickCount: 3 });
       await data.fixture.events.keyboard.type('FF00FF');
+      await data.fixture.events.keyboard.press('Enter');
       // Press escape to leave input field (does not leave edit-mode)
       await data.fixture.events.keyboard.press('Escape');
       // */
@@ -111,6 +112,7 @@ describe('CUJ: Creator can Add and Write Text: Select an individual word to edit
 
       // Move selection to characters 6-9 (partially overlapping new styles and no styles)
       await setSelection(6, 9);
+      await data.fixture.events.keyboard.press('Escape');
 
       // Verify that the toggles are off (as to be expected with mixed styles)
       expect(bold.checked).toBe(false);
